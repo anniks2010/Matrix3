@@ -31,8 +31,35 @@ namespace Matrix
             {
                 Console.Write(matrix[i][matrix.Length - 1 -i]);
             }
-
+            Console.WriteLine();
             ////Get diagonals: a) 7,5,3 b) 9,5,1
+            ////Get diagonals: a) 7,5,3 
+            for (int i = 2; i >= matrix.Length - 3; i--)
+            {
+                Console.Write(matrix[i][matrix.Length - 1 - i]);
+            }
+            Console.WriteLine();
+            ///a) 7,5,3 versioon 2:
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                Console.Write(matrix[matrix.Length - 1 - i][i]);
+            }
+            Console.WriteLine();
+
+
+            ////Get diagonals: b) 9,5,1
+            for (int i = 2; i >= matrix.Length - 3; i--)
+            {
+                Console.Write(matrix[i][i]);
+            }
+            Console.WriteLine();
+            ///b) 9,5,1 versioon 2:
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                Console.Write(matrix[matrix.Length - 1 - i][matrix.Length - 1 - i]);
+            }
+            Console.WriteLine();
+            
             Console.ReadKey();
 
         }
